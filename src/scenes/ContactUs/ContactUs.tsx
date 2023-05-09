@@ -1,7 +1,7 @@
 import { SelectedPage } from "@/shared/types"
 import {motion} from 'framer-motion'
 import {useForm} from 'react-hook-form'
-import ContactUsPageGraphics from '@/assets/ContactUsPageGraphic.png'
+import YogaPose from '@/assets/YogaPose.png'
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void
@@ -27,7 +27,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     </span> TO GET IN SHAPE
                 </h1>            
                 <p className="my-5">
-                        Some random latin text as placeholder
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </p>
             </motion.div>
             <div className="mt-10 justify-between gap-8 md:flex">
@@ -42,28 +42,28 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     <form target="_blank"
                           action="https://formsubmit.co/razgrisss41@gmail.com" method="POST"
                     >
-                        <input className="mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white" 
+                        <input className="mb-5 w-full rounded-lg bg-gray-700 px-5 py-3 placeholder-white" 
                                 type="text" name="name"
                                 placeholder="NAME"
                                 
                                 />
                                 
                                
-                        <input className="mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white" 
+                        <input className="mb-5 w-full rounded-lg bg-gray-700 px-5 py-3 placeholder-white" 
                                 type="text" 
                                 placeholder="EMAIL"
                                 
                                 />
                                 
                                 
-                                <textarea className="mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white" 
+                                <textarea className="mb-5 w-full rounded-lg bg-gray-700 px-5 py-3 placeholder-white" 
                                  rows={4}
                                  cols={50}
                                 placeholder="MESSAGE"
                                 
                                 />
                             
-                                <button type="submit" className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white">
+                                <button type="submit" className="mt-5 rounded-lg bg-blue-600 px-20 py-3 transition duration-500 hover:text-white">
                                     Submit
                                 </button>
                     </form>
@@ -78,7 +78,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 }}
                 >
                     <div className="md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-rigth-10 before:z-[-1]">
-                        <img className="w-full" src={ContactUsPageGraphics} alt="contactpicture" />
+                        <img className="w-full" src={YogaPose} alt="contactpicture" />
                     </div>
                 </motion.div>
             </div>

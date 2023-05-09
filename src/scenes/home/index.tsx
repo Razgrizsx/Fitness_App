@@ -1,7 +1,7 @@
 import { SelectedPage } from '@/shared/types'
 import useMediaQuery from '@/hooks/useMedia'
-import HomePageText from "@/assets/HomePageText.png"
-import HomePageGraphic from "@/assets/HomePageGraphic.png"
+import Fitnes_Couple from '@/assets/Fitness_Couple.png'
+import NicePng from '@/assets/NicePng.png'
 import SponsorRedBull from "@/assets/SponsorRedBull.png"
 import SponsorForbes from "@/assets/SponsorForbes.png"
 import SponsorFortune from "@/assets/SponsorFortune.png"
@@ -19,7 +19,7 @@ const aboveMedium = useMediaQuery("(min-width:760px)")
   return (
     <section
     id="home"
-    className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
+    className='gap-16 bg-black py-10 md:h-full md:pb-0'
     >
         <motion.div className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
@@ -35,11 +35,11 @@ const aboveMedium = useMediaQuery("(min-width:760px)")
                 >
                     <div className='relative'>
                         <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
-                            <img alt='home-page-text' src={HomePageText}/>
+                            <img alt='home-page-text' src={NicePng}/>
                         </div>
                     </div>
                     <p className='mt-8  text-sm'>
-                        Latin Text
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </motion.div>
                 <motion.div className='mt-8 flex items-center gap-8'
@@ -63,11 +63,11 @@ const aboveMedium = useMediaQuery("(min-width:760px)")
                 </motion.div>
             </div>
             <div className='flex basis-3/5 justify-center md:z-10 md:ml:40 md:mt-16 md:justify-items-end'>
-                <img alt='home-pageGraphic' src={HomePageGraphic}/>
+                <img alt='home-pageGraphic' src={Fitnes_Couple}/>
             </div>
         </motion.div>
         {aboveMedium && (
-            <div className='h-[150px] w-full bg-primary-100 py-10'>
+            <div className='h-[150px] w-full bg-gray-700 py-10'>
                 <div className='mx-auto w-5/6'>
                     <div className='flex w-3/5 items-center justify-between gap-8'>
                         <img alt='redbull' src={SponsorRedBull}/>

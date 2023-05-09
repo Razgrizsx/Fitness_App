@@ -1,10 +1,10 @@
 import { SelectedPage } from "@/shared/types"
-import image1 from '@/assets/image1.png'
-import image2 from '@/assets/image2.png'
-import image3 from '@/assets/image3.png'
-import image4 from '@/assets/image4.png'
-import image5 from '@/assets/image5.png'
-import image6 from '@/assets/image6.png'
+import Weight from '@/assets/Weigth.jpg'
+import Yoga from '@/assets/Yoga.jpg'
+import Abs from '@/assets/Abs.webp'
+import Adventure from '@/assets/Adventure.jpg'
+import Program from '@/assets/Program.jpg'
+import Training from '@/assets/Training.jpg'
 import { motion } from 'framer-motion'
 import Class from '@/scenes/Class'
 
@@ -16,33 +16,33 @@ interface Classes {
 
 const classes : Array<Classes> = [{
   name: "Weight Training Classes",
-  description: "Description",
-  image: image1
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  image: Weight
 },
 {
   name: "Yoga Classes",
-  description: "Description",
-  image: image2
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  image: Yoga
 },
 {
   name: "Ab Core Classes",
-  description: "Description",
-  image: image3
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  image: Abs
 },
 {
   name: "Adventure Classes",
-  description: "Description",
-  image: image4
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  image: Adventure
 },
 {
   name: "Fitness Classes",
-  description: "Description",
-  image: image5
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  image: Program
 },
 {
   name: "Training Classes",
-  description: "Description",
-  image: image6
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  image: Training
 }
 ]
 
@@ -52,7 +52,7 @@ type Props = {
 
 const OurClasses = ({setSelectedPage}: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-primary-100 py-40">
+    <section id="ourclasses" className="w-full bg-gray-700 py-40">
       <motion.div 
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
       >
@@ -69,14 +69,13 @@ const OurClasses = ({setSelectedPage}: Props) => {
               <h1 className='basis-3/5 font-montserrat text-3xl font-bold'>
                     Our Classes
                     <p>
-                      Texto de gimnasio Texto de gimnasio Texto de gimnasio Texto de gimnasio
-                      Texto de gimnasio Texto de gimnasio Texto de gimnasio Texto de gimnasio                 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                 
                     </p>
               </h1>
             </div>
         </motion.div>
         <div className="mt-10 h-[350] w-full overflow-x-auto overflow-y-hidden">
-          <ul className='w-[2800px] whitespace-nowrap'>
+          <ul className='w-[2800px] h-[300px] whitespace-nowrap'>
               {classes.map((item: Classes, index) => (
               <Class
                 key={`${item.name} - ${index}}`}

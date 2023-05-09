@@ -1,11 +1,11 @@
 //import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import Logo from "@/assets/Logo.png"
 import Link from './Link'
 import { SelectedPage } from '@/shared/types'
 import useMediaQuery from "@/hooks/useMedia";
 import { useState } from 'react';
 import ActionButton from '@/shared/actionButton';
+import NicePng from '@/assets/NicePng.png'
 
 type Props = {
     isTop : boolean
@@ -17,7 +17,7 @@ const Navbar = ({isTop, selectedPage, setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between"
     const [menuToggle, setMenuToggle] = useState<boolean>(false)
     const aboveMedium = useMediaQuery("(min-width: 1060px)");
-    const backGround = isTop ? "" : "bg-primary-100 drop-shadow";
+    const backGround = isTop ? "" : "bg-black drop-shadow";
 
   return (
     <nav>
@@ -25,7 +25,7 @@ const Navbar = ({isTop, selectedPage, setSelectedPage}: Props) => {
             <div className={`${flexBetween} mx-auto w-5/6`}>
                 <div className={`${flexBetween} w-full gap-16`}>
                     {/* left sile */}
-                    <img alt='logo' src={Logo}/>
+                    <img className='w-15 h-10' alt='logo' src={NicePng}/>
                     {/* right side */}
                     { aboveMedium ? (
                     <div className={`${flexBetween} w-full`}>
@@ -42,7 +42,7 @@ const Navbar = ({isTop, selectedPage, setSelectedPage}: Props) => {
                     </div>
                     ) : (
                         <button
-                        className="rounded-full bg-secondary-500 p-2"
+                        className="rounded-full bg-blue-900 p-2"
                         onClick={() => setMenuToggle(!menuToggle)}
                         >
                             <Bars3Icon className='h-6 w-6 text-white'/>
@@ -53,7 +53,7 @@ const Navbar = ({isTop, selectedPage, setSelectedPage}: Props) => {
         </div>
         {/*Mobile*/}
         {!aboveMedium && menuToggle && (
-            <div className='fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl'>
+            <div className='fixed right-0 bottom-0 z-40 h-full w-[300px] bg-gray-700 drop-shadow-xl'>
                 <div className='flex justify-end p-12'>
                     <button onClick={() => setMenuToggle(!menuToggle)}>
                         <XMarkIcon className= 'h-6 w-6 text-gray-400'/>

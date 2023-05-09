@@ -3,7 +3,7 @@ import {
     UserGroupIcon,
     AcademicCapIcon
 } from '@heroicons/react/24/solid'
-import BenefitsPageGraphics from '@/assets/BenefitsPageGraphic.png'
+import Couple from '@/assets/Couple.png'
 import {SelectedPage}  from '@/shared/types'
 import { motion } from 'framer-motion'
 import Benefit from './benefits'
@@ -18,15 +18,15 @@ type BenefitType = {
 const benefits : Array<BenefitType> = [{
     icon: <HomeModernIcon className='h-6 w-6'/>,
     title: 'State of the Art Facilities',
-    description: 'Random description'
+    description: 'Lorem ipsum dolor sit amet'
 },{
     icon: <UserGroupIcon className='h-6 w-6'/>,
     title: "100's of Diverse Classes",
-    description: "Another description"
+    description: "Lorem ipsum dolor sit amet"
 },{
     icon: <AcademicCapIcon className='h-6 w-6'/>,
     title: "Expert and Pro Trainers",
-    description: "last description"
+    description: "Lorem ipsum dolor sit amet"
 }
 ]
 
@@ -63,7 +63,7 @@ const Benefits = ({setSelectedPage}: Props) => {
             <h1 className='basis-3/5 font-montserrat text-3xl font-bold'>
                 More than just a gym
             </h1>
-            <p className='my-5 text-sm'>Text with description</p>
+            <p className='my-5 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </motion.div>
         <motion.div className='mt-5 items-center justify-between gap-8 md:flex'
                     initial= "hidden"
@@ -81,18 +81,18 @@ const Benefits = ({setSelectedPage}: Props) => {
             ))}
         </motion.div>
         <div className='mt-16 items-center justify-between gap-20 md:flex'>
-            <img className='mx-auto' src={BenefitsPageGraphics} alt="image" />
+            <img className='mx-auto h-90 w-80' src={Couple} alt="image" />
             <div>
                 <div className='relative'>
-                    <div className='before:absolute before:-top-20 before-left-20 before:z-[1] before content-abstractwaves'>
+                    <div className='before:absolute before:-top-20 before-left-20 before:z-[1]'>
                         <motion.div 
                         className='mt-8 flex items-center gap-8'
                         initial='hidden' 
-                        whileInView='visible' 
-                        viewport={{once: true, amount: 0.5}} 
-                        transition={{delay: 0.5, duration: 1}}
-                        variants={{hidden:{opacity: 0, x:-50},
-                        visible: {opacity: 1, x: 0}
+                whileInView='visible' 
+                viewport={{once: true, amount: 0.5}} 
+                transition={{delay: 0.5, duration: 1}}
+                variants={{hidden:{opacity: 0, x:-50},
+                visible: {opacity: 1, x: 0}
                     }}
                         >
                             <h1 className='basis-3/5 font-montserrat text-3xl font-bold'>
@@ -111,9 +111,7 @@ const Benefits = ({setSelectedPage}: Props) => {
                 variants={{hidden:{opacity: 0, x:-50},
                 visible: {opacity: 1, x: 0}
             }}>
-                   <p className='my-5 mb-5'> Long Description Long Description Long Description Long Description 
-                   Long Description Long Description Long Description Long 
-                   Description Long Description Long Description</p>
+                   <p className='my-5 mb-5'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </motion.div>
                 <div className='relative mt-14'>
                     <div className='before:absolute before:right-40 before:z-[-1] before:content-sparkles'>
