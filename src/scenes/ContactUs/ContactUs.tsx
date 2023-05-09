@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types"
 import {motion} from 'framer-motion'
-import {useForm} from 'react-hook-form'
 import YogaPose from '@/assets/YogaPose.png'
 
 type Props = {
