@@ -39,7 +39,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 visible: {opacity: 1, y: 0}
                 }}>
                     <form target="_blank"
-                          action="https://formsubmit.co/razgrisss41@gmail.com" method="POST"
+                          action="https://formsubmit.co/example@mail.com" method="POST" //here goes your mail
                     >
                         <input className="mb-5 w-full rounded-lg bg-gray-700 px-5 py-3 placeholder-white" 
                                 type="text" name="name"
