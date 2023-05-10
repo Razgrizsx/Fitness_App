@@ -9,7 +9,7 @@ This is a Fitness application developed with react-typescript. The latin text is
 Logo and basic information.
 
 <p align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/104910559/237498179-00ec7b84-840a-424e-b131-0568fb13bc48.PNG" />
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498179-00ec7b84-840a-424e-b131-0568fb13bc48.PNG" />
 </p>
 
 2. Benefits Page
