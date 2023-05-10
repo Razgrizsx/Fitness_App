@@ -17,11 +17,11 @@ Logo and basic information.
 A showcase of the benefits of using the fitness programs this particular entity has to offer.
 
 <p align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/104910559/237498188-f7fea1c3-4b08-489c-bbe3-9553b93a937a.PNG" />
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498188-f7fea1c3-4b08-489c-bbe3-9553b93a937a.PNG" />
 </p>
 
 <p align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/104910559/237498192-abeb6843-eb3f-4fea-a763-c10aebc0c5b0.PNG" />
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498192-abeb6843-eb3f-4fea-a763-c10aebc0c5b0.PNG" />
 </p>
 
 3. Our Classes Page
@@ -29,7 +29,7 @@ A showcase of the benefits of using the fitness programs this particular entity 
 Detailed information about each class.
 
 <p align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/104910559/237498198-3eef8de9-4d7b-476b-8568-0a9b2cb79040.PNG" />
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498198-3eef8de9-4d7b-476b-8568-0a9b2cb79040.PNG" />
 </p>
 
 4. Contact Info Page
@@ -37,7 +37,7 @@ Detailed information about each class.
 This can be used to contact the owner of the page, it sends an email to the address in the code.
 
 <p align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/104910559/237498201-f550828c-4b11-49e1-b73c-017fae57b033.PNG" />
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498201-f550828c-4b11-49e1-b73c-017fae57b033.PNG" />
 </p>
 
 5. Footer Page
@@ -45,7 +45,7 @@ This can be used to contact the owner of the page, it sends an email to the addr
 Footer with information, mostly legal, and more contact info.
 
 <p align="center">
-  <img height="200" src="https://user-images.githubusercontent.com/104910559/237498205-71426b03-b09d-47f2-baa1-650b3e44858d.PNG" />
+  <img height="300" src="https://user-images.githubusercontent.com/104910559/237498205-71426b03-b09d-47f2-baa1-650b3e44858d.PNG" />
 </p>
 
 ## Local Set Up
