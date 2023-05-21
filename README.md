@@ -2,6 +2,8 @@
 
 ## Overview
 
+Visit the deployed site in: https://fitness-app-tawny.vercel.app/
+
 This is a Fitness application developed with react-typescript. The latin text is a placeholder, a real fitness organization would replace this with their information. It consists of five main views:
 
 1. Landing Page
